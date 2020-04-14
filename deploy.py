@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yhzkpljdkgqtvo:aa4d860ab25d7350158ab17aea1de6d9a4353366fbaef317916483552a88206d@ec2-34-234-228-127.compute-1.amazonaws.com:5432/d1hn617cj92jh3'
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
